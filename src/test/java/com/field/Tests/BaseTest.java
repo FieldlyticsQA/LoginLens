@@ -5,7 +5,7 @@ import com.field.Driver.Driver;
 import org.apache.log4j.Logger;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
-
+import org.openqa.selenium.JavascriptExecutor;
 import java.awt.*;
 import java.util.Map;
 
