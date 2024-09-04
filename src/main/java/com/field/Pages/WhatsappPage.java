@@ -34,10 +34,11 @@ public final class WhatsappPage extends BasePage {
     // Locators for different chat groups
     private final By codegroup = By.xpath("//*[@title='Code Fieldlytics']");
     private final By devgroup = By.xpath("//*[@title='DevTeam-Fieldlytics(PPMS)']");
-    private final By you = By.xpath("//*[@title='+91 824 860 6917']");
+    private final By you = By.xpath("//*[@title='+91 63834 21413']");
 
     // Locator for the attach button
     private final By btnattach = By.xpath("//*[@title='Attach']");
+    private final By addacaption = By.xpath("//*[@id='app']/div/div[2]/div[2]/div[2]/span/div/div/div/div[2]/div/div[1]/div[3]/div/div/div[1]/div[1]");
 
     // Locator for the document option in the attachment menu
     private final By documents = By.xpath("//*[text()='Document']");
@@ -108,6 +109,12 @@ public final class WhatsappPage extends BasePage {
     public WhatsappPage clickdocuments() {
         log.info("Clicking documents option.");
         click(documents, WaitStrategy.CLICKABLE);
+        return this;
+    }
+
+     public WhatsappPage sendmessage() {
+        log.info("Typing Message.");
+        enter(addacaption, "All applications testing done. Click the Report to view status!", WaitStrategy.CLICKABLE);
         return this;
     }
 
