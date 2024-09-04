@@ -64,18 +64,18 @@ public final class WhatsappPage extends BasePage {
 
         if (groupName.equals("dev")) {
             // Search and click on 'You' chat for the 'Dev' group
-            /*log.info("Searching for 'DevTeam-Fieldlytics(PPMS)' chat.");
+            log.info("Searching for 'DevTeam-Fieldlytics(PPMS)' chat.");
             enter(txtboxsearch, "DevTeam-Fieldlytics(PPMS)", WaitStrategy.CLICKABLE);
             ExplicitWaitFactory.performExplicitWait(WaitStrategy.PRESENCE, devgroup);
             log.info("'You' chat found and clicking.");
-            click(devgroup, WaitStrategy.CLICKABLE);*/
+            click(devgroup, WaitStrategy.CLICKABLE);
 
 
-            enter(txtboxsearch, "you", WaitStrategy.CLICKABLE);
+            /*enter(txtboxsearch, "you", WaitStrategy.CLICKABLE);
             ExplicitWaitFactory.performExplicitWait(WaitStrategy.PRESENCE, you);
             log.info("'You' chat found and clicking.");
             click(you, WaitStrategy.CLICKABLE);
-
+*/
 
 
         } else {
