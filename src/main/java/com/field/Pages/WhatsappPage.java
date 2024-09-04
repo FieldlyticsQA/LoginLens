@@ -71,10 +71,10 @@ public final class WhatsappPage extends BasePage {
             click(devgroup, WaitStrategy.CLICKABLE);*/
 
 
-            enter(txtboxsearch, "you", WaitStrategy.CLICKABLE);
+            /*enter(txtboxsearch, "you", WaitStrategy.CLICKABLE);
             ExplicitWaitFactory.performExplicitWait(WaitStrategy.PRESENCE, you);
             log.info("'You' chat found and clicking.");
-            click(you, WaitStrategy.CLICKABLE);
+            click(you, WaitStrategy.CLICKABLE);*/
 
 
 
