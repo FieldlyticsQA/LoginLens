@@ -54,8 +54,8 @@ public final class DriverFactory {
             // Add user data directory to Chrome options
             options.addArguments("user-data-dir=C:\\Path");
             driver = new ChromeDriver(options);  // Initialize ChromeDriver with options
-            JavascriptExecutor js = (JavascriptExecutor) driver;
-            ((JavascriptExecutor) driver).executeScript("window.focus();");
+            /*JavascriptExecutor js = (JavascriptExecutor) driver;
+            ((JavascriptExecutor) driver).executeScript("window.focus();");*/
             logger.info("Chrome WebDriver initialized successfully.");
         }
         // Check for Firefox browser
